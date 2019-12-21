@@ -1,0 +1,95 @@
+
+
+@font-face {
+    font-family: "Peach_Pen";
+    src: url("peach_pen/Peach Pen.ttf");
+}
+
+main{
+    display: flex;
+    height:100%;
+}
+
+.lisere{
+    width:150px;
+    background-color:#773804;
+}
+
+.apresentaçao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 10%;
+}
+
+content{
+    width: 100%;
+}
+
+
+.parcours{
+    background-color:#DDB18C;
+    display: flex;
+    width:100%;
+    justify-content:space-around;
+    margin-top: 7%;
+}
+
+ul{
+    color: #441F00;
+}
+
+
+img{
+width: 10em ;
+height: 10em;
+margin-left: 10%;
+border: solid 3px #773804;
+border-radius: 1em;
+}
+
+#meu_nome{
+    text-align: center;
+    color:#773804;
+    float: inline-start;
+}
+#descriçao{
+    padding-top: 0.5em;
+    text-align: center;
+    text-shadow: 10px 10px 5px rgb(146, 108, 77);
+    color: #441F00;
+}
+
+h3{
+    color: #773804;
+    border-bottom: dashed;
+    width: 10em;
+}
+
+body{
+    background-color:#DDB18C;
+    height:100vh;
+    margin: 0px;
+    
+}
+
+@media all and (max-width:1024px) {
+
+    #bloc_page { 
+        width: auto;
+        }
+
+    .parcours{
+        flex-direction: column;
+        }   
+
+    #meu_nome{
+        color: blue;
+        }
+    
+    .lisere{
+         display: none;
+        }
+
+}

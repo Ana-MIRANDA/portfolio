@@ -1,0 +1,58 @@
+body{
+    background:beige;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+h1{
+    color: chocolate;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+h2{
+    color: brown;
+    font-size: 25px;
+}
+
+#ingredients, #method{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+#back{
+    margin-left: 150px;
+}
+
+nav > .navbar-toggler{
+    border:solid  2px green !important;
+}
+
+ul{
+   list-style: none;
+}
+
+
+#ingredients_list > li::before{
+    content: "✓ " !important;
+}
+
+#method + p{
+    margin-left:3em;;
+}
+
+ol>li{
+    margin-left:1em;
+}
+
+#accordion{
+    color: green;
+}

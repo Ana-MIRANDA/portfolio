@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta tags usefull to responsive (from bootstrap)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS (from bootstrap)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link href="recipies.css" rel="stylesheet">
+
+    <!-- Title -->
+    <title>Our Cakes!</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-beige">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="list-style: none">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page_soups.html">Our soups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page_dishes.html">Our Dishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page_cakes.html">Our Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page_world.html">From the World</a>
+                    </li>
+                </ul>
+
+                <button onclick="goBack()" id="back" class="btn btn-outline-success my-2 my-sm-0"
+                    color="form-control mr-sm-2">Go Back</button>
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
+
+            </div>
+        </nav>
+
+        <h1>Cakes? Biscuits? Sugar...</h1><br>
+        <br>
+        <h2>And now, for all the sweet tooth, we present: </h2><br>
+        <br>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+
+                        <button id="accordion" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Did you say omething low-fat? : Fruity sponge cake!
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <th>Prep Time</th>
+                                <th>Cook Time</th>
+                                <th>Serves</th>
+                            </tr>
+                            <tr>
+                                <td>10 min</td>
+                                <td>20 min</td>
+                                <td>8 pers</td>
+                            </tr>
+                        </table>
+                        <br>
+
+                        <p id="ingredients"> Ingredients</p>
+                        <ul id="ingredients_list">
+                            <li>Butter or oil, for greasing</li>
+                            <li>50g plain flour</li>
+                            <li>3 tbsp cornflour</li>
+                            <li> 1 tsp baking powder</li>
+                            <li> 4 eggs, separated</li>
+                            <li>175g caster sugar</li>
+                            <li> For the filling</li>
+                            <li>295g can mandarin segment, drained</li>
+                            <li> 200g tub low-fat fromage frais</li>
+                            <li>Icing sugar, for dusting</li>
+                        </ul>
+
+                        <p id="method">Method</p>
+                        <ol>
+                            <li>Heat oven to 180C/fan 160C/gas 4.</li>
+                            Grease then line the base and sides of 2 x 20cm sandwich tins with greaseproof paper.<br>
+                            Sieve the flours and baking powder together.</li>
+                            <li>Use electric hand beaters to whisk the egg whites until stiff, then briefly whisk in the
+                                sugar.</li>
+                            <li>Beat the egg yolks quickly, then whisk into the whites.</li>
+                            <li>Fold in the dry ingredients using a large metal spoon, then spoon the mixture into the
+                                tins
+                                and
+                                level the tops.</li>
+                            <li>Bake for 18-20 mins until risen,light golden and a skewer inserted into the middle comes
+                                out
+                                clean.</li>
+                            <li>Cool in the tins for 10 mins, then gently remove and leave to cool completely.
+                            </li>
+                            <li>Mix the mandarins and fromage frais together. Peel away the greaseproof paper,
+                                sandwich
+                                the
+                                cakes
+                                with the mandarin mix, then dust with the icing sugar to serve. </li>
+                            Best eaten on the day it’s made.
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button id="accordion" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Almond biscuits!! Delicious...Hmm
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p id="ingredients"> Ingredients</p>
+
+                        <table>
+                            <tr>
+                                <th>Prep Time</th>
+                                <th>Cook Time</th>
+                                <th>Makes</th>
+                            </tr>
+                            <tr>
+                                <td>15 min</td>
+                                <td>20 min</td>
+                                <td>34 biscuits</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <ul id="ingredients_list">
+                            <li>4 egg whites</li>
+                            <li>140g caster sugar</li>
+                            <li>2 tbsp plain flour</li>
+                            <li>140g ground almond</li>
+                        </ul>
+
+                        <p id="method">Method</p>
+                        <ol>
+                            <li>Heat oven to 160C/140C fan/gas 3.</li>
+                            <li>Line 2 baking trays with baking parchment.</li>
+                            <li>Place the egg whites in a clean bowl and whisk until they form soft peaks.</li>
+                            <li>Add the sugar and continue to whisk for a few mins more until the whites are glossy.
+                            </li>
+                            <li>Sift the flour onto the whites, spoon over the almonds, then fold everything together
+                                quickly,
+                                keeping the mixture light and airy.</li>
+
+                            <li>Spoon tbsps of the almond mix, well spaced apart, onto the prepared trays.</li>
+                            <li>Bake for 20 mins until golden.</li>
+                            <li>Remove from the oven and cool on a wire rack.</li>
+                            Serve with the gooseberry fool.<br>
+                            These biscuits are best freshly baked but will keep in a sealed container for up to a
+                            week.<br>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">2019 CS50:
+                <p id="created">Project 0 - Ana MIRANDA</p>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

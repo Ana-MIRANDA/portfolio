@@ -1,0 +1,180 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul, ol{
+    list-style:none;
+}
+
+body{ 
+    background: #bfbfbf url("images/background.jpg") repeat-x; /* definir a imagem de fundo */ 
+    /* como a imagem de fundo nao cobre o body totalmente, a imagem vai repetir-se na horizontal por iniciativa propria para ocupar todo o espaço
+    entao a soluçao é fazer é repeat-x pk assim ela n s vai repetir na vertical*/ 
+    /* outro aspecto é que depois de nao a deixar repetir-se a parte debaixo da pagina fica 
+    com o fundo branco em vez de cinzento, o cinzento da imagem e para k isso nao aconteça faz-se 
+    #bfbfbf antes do url - o fim do body fica a cinza e todo o espaço no fundo da pagina tb*/ 
+    font-family: Arial, sans-serif;
+}
+
+header{
+    padding: 30px 0;
+}
+
+header h1{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #0000;
+    font-family: "Limelight", sans-serif;
+
+}
+
+/* main-menu */
+
+#main-menu ul {
+    width: 980px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 148px;
+}
+
+#main-menu ul li{
+    float: left;
+    width: 140px;
+    height: 500px;
+    overflow: hidden; /* para que nao se veja o k ultrpassa o tamanho do body */
+    position: relative;
+
+}
+
+.bw{
+    position: absolute;
+    left: 0px;
+    width: 140px;
+    height: 500px;
+    cursor: pointer;
+    background: url("images/bw-image.jpg") no-repeat;
+    opacity: 0.7;
+}
+
+
+.color{
+    position: absolute;
+    left:140px;
+    width: 140px;
+    height: 500px;
+    cursor: pointer;
+    background: url("images/color-image.jpg") no-repeat;
+}
+
+/* se so fizermos isto so aparece a imagem da scarlet   porque ela tem extamenete o tamanho pedido no css.
+mas querendo ver tb as outras vamos tentar decalar com a imagem de fundo em funçao da parte do site em que estamos
+(cada uma das atrizes é uma parte: "part1", "part2",etc no html) como se ve a seguir:*/
+
+#part2 div{
+    background-position: -140px 0px;
+}
+
+#part3 div{
+    background-position: -280px 0px;
+}
+
+#part4 div{ /* !!!!! ESTA NAO FICA COM A FOTO DA RACHEL. FICA C A SCARLET PK ?? N SEI */ 
+    background-position: -420x 0px;
+}
+
+#part5 div{
+    background-position: -560px 0px;
+}
+
+.description{
+    position: absolute;
+    left:140px;
+    width: 240px;
+    height: 460px;
+    padding: 20px;
+    background: #fff;
+}
+
+.description h2{
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-family: "Limelight", sans-serif;
+}
+
+.description h3{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 26px;
+    font-family: "Lobster", sans-serif;
+    background: #d70000;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    border radius: 5px;
+
+}
+
+.description p{
+    padding-top: 35px;
+    font-size: 22px;
+    font-family: "Lobster", sans-serif; /* a fonte google que se fez link no html */ 
+    color: #000;
+    text-align: center;
+}
+
+
+/*buttons-menu*/
+
+#buttons-menu{
+    float:left;
+    width:100%;
+    padding: 170px 0 50px 0;
+}
+#buttons-menu ul{
+    float:left;
+    position:relative;
+    left:50%;
+    text-align: center;
+}
+
+.button{
+    float:left;
+    width: 100px;
+    margin-left: 30px;
+    padding: 10px 0;
+    position: relative;
+    right: 50%;
+    text-shadow: 1px 1px 1px #000;
+    font-family: "Lobster", sans-serif; 
+    text-align: center;
+    color:#fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.75);
+    box-shadow: #333;
+    border: 2px solid #b70000;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.hovered{
+    background: #b70000;
+    border: 2px solid #333;
+    font-size: 24px; 
+}
+
+
+
+
+
+
+
+
+
+
