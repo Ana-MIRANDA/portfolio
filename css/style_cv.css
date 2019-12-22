@@ -266,7 +266,91 @@ section .heading h2{
   .timeline-body > p + p {
     margin-top: 5px;
   }
+                      /* Mediq query para a timeline*/
 
+  @media screen and (max-width:600px){
+
+    li .timeline-panel, /* Para os panels ficarem com margem a esquerda /* OK +/- */
+    li .timeline-inverted{
+      left: 70px;
+    }
+    
+    
+/* Para que os div que contêm os panels fiquem todos a mesma medida 320X585px; */ 
+    .timeline-inverted{
+      width: 320px;
+      height: 585px;
+    }
+
+    li{
+      width: 320px;
+      height: 585px;
+    }
+    /* desde do comentario ate aqui este serve para Para que os div que contêm os panels fiquem todos a mesma medida 320X585px; */ 
+    
+
+  .timeline-panel{ /* para que os panels fiquem do mesmo tamanho /* OK*/
+      width: 230px;
+      height: 585px;
+    } 
+
+
+    .timeline > li.timeline-inverted { /* para o panel da direita ir p debaixo do primeiro e ficar cima do sehundo, saindo da parte direita onde estava/* OK*/
+      padding-left: 0;
+      width: 230px; /*para que este panel do li inverted fique com o mm tamanho dos outros dois/* OK*/
+      height: 585px;
+      }
+
+    .timeline:before{ /*a linha da timeline encosta a esquerda /* OK */
+      left: 30px;
+    }
+
+    li.timeline-inverted > .timeline-panel:after{ /* os biquinhos dos panels. Nao consigo retirar */ 
+      left: 10px;
+    }
+
+    .timeline > li > .timeline-badge { /* p as bolas irem tb p a esquerda /* OK*/
+      left: 30px;
+    }
+    
+    .timeline > li > .timeline-panel {
+      width: 100%;
+      float: left;
+      text-align: left; 
+      border: 1px solid #d4d4d4;
+      border-radius: 2px;
+      padding: 20px;
+      position: relative;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    }
+   
+
+    .timeline > li { /*para dar espaçamento entre os panels entre eles, no cimo de cada um /* OK */ 
+      margin-bottom: 80px;
+  }
+
+/* O que eu copiei do de cima para os outros dois */
+
+.timeline > li > .timeline-panel:before {
+  display: none;
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  left: -14px;
+  top: 27px;
+  right: auto;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-left-width: 0;
+  border-right: 0 solid #fff;
+  border-right-width: 14px;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+ 
+}
  /*Education*/
 
  #education{
