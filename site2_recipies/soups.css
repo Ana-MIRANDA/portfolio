@@ -1,0 +1,14 @@
+body{
+    background:beige;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+
+
+#ingredients{
+    font-size: 56px;
+    font-weight: bolder;
+}

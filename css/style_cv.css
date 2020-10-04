@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5{
 h2{
   margin-top: 10px;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 img{
@@ -25,18 +26,25 @@ section {
 
 section .heading{
   text-align: center;
-  padding-bottom: 40px;
+  
 }
 
 section .heading h2{
   text-transform: uppercase;
+  margin-bottom: 1em;
   
 }
 
-.red-divider{
+#stage{
+  margin-top: 15px;
+  color: #b3916b;
+}
+
+
+.line-divider{
   width: 100px;
   height: 2px;
-  background:#d82c3e;
+  background:#b3916b;
   margin: 0 auto;
 }
 
@@ -50,8 +58,7 @@ section .heading h2{
 /*ABOUT*/
 
 #about{
-  padding-top: 100px;
-  background: #d82c2e;
+  background: #ffcf99;
 }
 
 .profile-picture{
@@ -62,18 +69,21 @@ section .heading h2{
 }
 
 #about .heading h1{
-  color: #fff;
+  color:#b39f6b;
+  font-weight: 900;
+  margin-top: 15px;
   text-transform: uppercase;
 }
 
 #about .heading h3{
-  color:#000;
+  color:#b3916b;
 }
 
 .button1{
   font-weight: bold;
   text-transform: uppercase;
   color:white;
+  background-color: #b3916b;
   border: 1px solid white;
   display: inline-block;
   margin-top: 20px;
@@ -83,52 +93,50 @@ section .heading h2{
 }
 
 .button1:hover{
-  background:white;
-  color: #d82c3e;
+  background: white;
+  color:  #b3916b;
   text-decoration: none;
 }
 
-/* skills */
 
-#skills {
+/* about-me */
+
+#about-me {
   background: #fff;
 }
 
-#skills .heading h2{
-  color:  #d82c3e;
+#about-me .heading h2{
+  color:#b3916b;
 }
 
-#skills .progress{
-  height: auto;
-  margin: 30px 20px;
-  backface-visibility:  #ddd;
-}
-
-#skills .progress-bar{
-  background: #d82c3e;
-}
-
-#skills .progress h5{
-  text-shadow: 1px 1px 1px #000;
+.maDescription{
+  text-align: center;
+  margin: 0 200px 0 200px;
 }
 
 /*Experience*/ 
 
-.containerexperiencia{
-  background-color: #d82c3e; 
+
+.titre_exp{color: #b3916b;}
+
+.timeline-title_h4{
+  color: #f0ad4e;
+}
+
+.poste{
+  color:  #b3916b;
+}
+
+.year{
+  color: #f0ad4e;
+}
+
+.tasks{
+  color: #b3916b;
 }
 
 
-#experience{
-  background: #d82c2e;
-}
-
-#experience .heading h2{
-  color:#fff;
-}
-
-
-/* Para a timeline"*/
+/* timeline"*/
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -225,7 +233,7 @@ section .heading h2{
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    background-color: #999999;
+    background-color:#b3916b;
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -252,12 +260,12 @@ section .heading h2{
     background-color: #f0ad4e !important;
   }
   .timeline-badge.danger {
-    background-color: #d9534f !important;
+    background-color: #b3916b;
   }
 
   .timeline-title {
     margin-top: 0;
-    color: inherit;
+    
   }
   .timeline-body > p,
   .timeline-body > ul {
@@ -265,8 +273,9 @@ section .heading h2{
   }
   .timeline-body > p + p {
     margin-top: 5px;
+    color: 
   }
-                      /* Mediq query para a timeline*/
+                      /* Media query para a timeline*/
 
   @media screen and (max-width:600px){
 
@@ -276,7 +285,6 @@ section .heading h2{
     }
     
     
-/* Para que os div que contêm os panels fiquem todos a mesma medida 320X585px; */ 
     .timeline-inverted{
       width: 320px;
       height: 585px;
@@ -286,30 +294,26 @@ section .heading h2{
       width: 320px;
       height: 585px;
     }
-    /* desde do comentario ate aqui este serve para Para que os div que contêm os panels fiquem todos a mesma medida 320X585px; */ 
-    
-
-  .timeline-panel{ /* para que os panels fiquem do mesmo tamanho /* OK*/
+   
+  .timeline-panel{ 
       width: 230px;
       height: 585px;
     } 
 
-
-    .timeline > li.timeline-inverted { /* para o panel da direita ir p debaixo do primeiro e ficar cima do sehundo, saindo da parte direita onde estava/* OK*/
+    .timeline > li.timeline-inverted { 
       padding-left: 0;
-      width: 230px; /*para que este panel do li inverted fique com o mm tamanho dos outros dois/* OK*/
-      height: 585px;
+      width: 230px; 
       }
 
-    .timeline:before{ /*a linha da timeline encosta a esquerda /* OK */
+    .timeline:before{
       left: 30px;
     }
 
-    li.timeline-inverted > .timeline-panel:after{ /* os biquinhos dos panels. Nao consigo retirar */ 
+    li.timeline-inverted > .timeline-panel:after{ 
       left: 10px;
     }
 
-    .timeline > li > .timeline-badge { /* p as bolas irem tb p a esquerda /* OK*/
+    .timeline > li > .timeline-badge {
       left: 30px;
     }
     
@@ -325,12 +329,9 @@ section .heading h2{
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     }
    
-
-    .timeline > li { /*para dar espaçamento entre os panels entre eles, no cimo de cada um /* OK */ 
+    .timeline > li { 
       margin-bottom: 80px;
   }
-
-/* O que eu copiei do de cima para os outros dois */
 
 .timeline > li > .timeline-panel:before {
   display: none;
@@ -354,49 +355,57 @@ section .heading h2{
  /*Education*/
 
  #education{
-   background-color: #fff;
+   background-color:#ffcf99;
  }
 
- #education.heading h2{
-  color: #d82c2e;
+ #education-competences{
+   color: #b3916b;
+   margin-bottom: 1em;
+
  }
+
+ .ecoles{
+   color: #f0ad4e;
+   font-size: 25px ;
+ }
+
 
  .education-block{
    width:80%;
    margin:0 auto;
    text-align:center;
    padding: 30px;
-   background: #ddd;
+   background: white;
    border-radius:10px;
    border: 2px solid #ccc;
    margin-bottom:20px;
  }
 
  .education-block h5{
-   color: #888;
+   color: #ffcf99;
    font-size:15px;
    margin-bottom: 15px;
  }
 
-/* Se tivessemos o gliphicon 
-
-.education-block .glyphicon{
-  font-size: 40px;}
-*/
 
 .education-block h3{
-  color: #d82c2e;
+  color:  #f0ad4e;
 }
 
 .education-block h4{
   margin-bottom:20px;
+  color:#b3916b;
+}
+
+.competences{
+  color:#b3916b;
 }
 
 .education-block p{
   font-weight: bolder;
 }
 
-.education-block .red-divider{
+.education-block .line-divider{
   margin-bottom: 20px;
 }
 
@@ -404,22 +413,23 @@ section .heading h2{
 /* Portfolio*/
 
 #portfolio{
-  background: #d82c2e;
+  background: #ffcf99;
 }
 
 #portfolio .heading h2{
-  color: #fff;
+  color: #b3916b;
+  margin-bottom: 1em;
 }
 
 
 #portfolio .img-thumbnail{
   width: 100%;
   height: 200px;
-  filter: grayscale(80%); /* para dar cor cinza as imagens. Nao é o bootstrap, temos de ser nos a fazer*/
+  filter: grayscale(80%);
   -webkit-filter: grayscale(80%);
 }
 
-#portfolio .img-thumbnail:hover{ /* para anular o efeito de cima quando se passa o rato, para q fiquem coloridas e nao cinza*/
+#portfolio .img-thumbnail:hover{
   filter: none; 
   -webkit-filter: none;
 }
@@ -434,72 +444,48 @@ section .heading h2{
 height: auto;
 width: auto;
 }
-/* Recomendaçoes Carrossel*/
 
-/* Cabeçalho*/
-.red-divider{
+
+.line-divider{
   width: 100px;
   height: 2px;
-  background:#d82c3e;
+  background:#b3916b;
   margin: 0 auto;
 }
 
-#recommendations{
-  background: #fff;
-}
-#recommendations h2{
-  color:#d82c2e;
-  text-align: center;
-}
 
-/* Texto das recomendaçoes*/
-.carousel-inner .carousel-item {
-    transition: transform 3s ease, -webkit-transform 3s ease;
+/* Langues et loisirs*/
+
+#langues_titre{
+  color:#b3916b;
+  margin-bottom: 1em; 
 }
 
 
-.carousel-control-next, .carousel-control-prev:hover {
-  color: red;
-}
-
-.carousel-item{
-  text-align: center;
-  margin-top: 25px;px;
-
-}
-.carousel-item h3 {
-  color:red;
-  font-family: sans-serif;
-}
-
-
-.carousel-item h4 {
-  color:black;
+.langues-loisirs h4 {
+  color: #b3916b;
   font-family: sans-serif;
   font-weight: bold;
-  
 }
+
+.langues-loisirs h3 {
+  color: #f0ad4e;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
 
 /*footer*/
   
 footer{
-  background: #333;
+  background: #b3916b;  
   padding:20px 0 40px;
 }
 
-/*Se tivessemos o icone/simbolo
-footer .glyphicon{
-  font-size: 25px;
-  margin: 20px;
-  color:#d82c2e;
-  hauter: 30px;
-}
-footer .glyphicon:hover{
-  font-size: 27px;
-}*/
 
 footer h5{
   color: #fff;
   font-weight: normal;
-
+  padding-top:1em;
 }
